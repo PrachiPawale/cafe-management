@@ -1,0 +1,163 @@
+/* ===== TOOLBAR ===== */
+
+.mat-toolbar {
+    margin: -24px;
+    width: auto;
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #4a2c2a,
+        #6f4e37
+    ) !important;
+
+    color: #f8f1e5;
+
+    box-shadow: 0 5px 15px rgba(74, 44, 42, 0.25);
+}
+
+/* ===== TITLE ===== */
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+/* ===== FORM FIELD ===== */
+
+mat-form-field {
+    padding: 8px;
+    width: 100%;
+}
+
+/* ===== BUTTON ALIGNMENT ===== */
+
+.float-right {
+    float: right;
+}
+
+/* ===== CARD ===== */
+
+mat-card {
+
+    padding: 25px;
+
+    background: #fffdf8;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(200, 155, 60, 0.25);
+
+    box-shadow: 0 10px 25px rgba(111, 78, 55, 0.12);
+}
+
+/* ===== TABLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ===== CUSTOMERS TABLE ===== */
+
+#customers {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+/* ===== TABLE HEADERS ===== */
+
+#customers th {
+
+    padding: 14px;
+
+    text-align: left;
+
+    background: linear-gradient(
+        135deg,
+        #6f4e37,
+        #4a2c2a
+    );
+
+    color: #f8f1e5;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+/* ===== TABLE DATA ===== */
+
+#customers td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #e6d8c3;
+
+    color: #4a2c2a;
+}
+
+/* ===== ALTERNATE ROWS ===== */
+
+#customers tr:nth-child(even) {
+
+    background: #f8f1e5;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+#customers tr:hover {
+
+    background: #efe3d0;
+
+    transition: 0.3s ease;
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+.mat-raised-button,
+.mat-flat-button {
+
+    border-radius: 30px;
+
+    font-weight: 500;
+}
+
+/* ===== PAGINATION / ICONS ===== */
+
+mat-icon {
+
+    color: #6f4e37;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    mat-card {
+        padding: 15px;
+    }
+
+    #customers {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .title-center {
+        font-size: 20px;
+    }
+}

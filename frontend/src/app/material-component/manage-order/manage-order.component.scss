@@ -1,0 +1,169 @@
+/* ===== FORM FIELDS ===== */
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* ===== FLOAT RIGHT ===== */
+
+.float-right {
+  float: right;
+}
+
+/* ===== CARD ===== */
+
+mat-card {
+  padding: 24px;
+  padding-bottom: 20px;
+
+  background: #fffdf8;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(200, 155, 60, 0.25);
+
+  box-shadow: 0 10px 25px rgba(111, 78, 55, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 18px 35px rgba(111, 78, 55, 0.18);
+}
+
+/* ===== TABLE CONTAINER ===== */
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* ===== TABLE ===== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+
+th {
+
+  background: linear-gradient(
+    135deg,
+    #6f4e37,
+    #4a2c2a
+  );
+
+  color: #f8f1e5;
+
+  padding: 14px;
+
+  text-align: left;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+/* ===== CELLS ===== */
+
+td {
+
+  padding: 14px;
+
+  color: #4a2c2a;
+
+  border-bottom: 1px solid #eadfcf;
+}
+
+/* ===== STRIPED ROWS ===== */
+
+tr:nth-child(even) {
+  background: #f8f1e5;
+}
+
+/* ===== HOVER ===== */
+
+tr:hover {
+  background: #efe3d0;
+  transition: 0.3s ease;
+}
+
+/* ===== LAST ROW ===== */
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== FORM FIELD ACCENTS ===== */
+
+.mat-form-field-label {
+  color: #6f4e37 !important;
+}
+
+.mat-focused .mat-form-field-outline-thick {
+  color: #c89b3c !important;
+}
+
+/* ===== MATERIAL ICONS ===== */
+
+mat-icon {
+  color: #6f4e37;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  mat-card {
+    padding: 16px;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+
+/* Submit & Add Buttons */
+
+button.mat-flat-button {
+    background: linear-gradient(135deg, #c89b3c, #a67c00) !important;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button.mat-flat-button:hover:not([disabled]) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(200, 155, 60, 0.35);
+}
+
+button.mat-flat-button[disabled] {
+    background: #d7c3a3 !important;
+    color: #8b6f47 !important;
+    cursor: not-allowed;
+}
+
+/* Total Amount Button */
+
+.float-right {
+    float: right;
+}
+
+.float-right.mat-flat-button {
+    background: #6f4e37 !important;
+    color: #fff !important;
+    font-weight: 700;
+}

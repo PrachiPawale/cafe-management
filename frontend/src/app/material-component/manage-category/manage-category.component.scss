@@ -1,0 +1,200 @@
+/* ===== FLOAT RIGHT ===== */
+
+.float-right {
+  float: right;
+}
+
+/* ===== CARD ===== */
+
+mat-card {
+  padding: 24px;
+  border-radius: 20px;
+
+  background: #fffdf8;
+
+  border: 1px solid rgba(200, 155, 60, 0.25);
+
+  box-shadow: 0 10px 25px rgba(111, 78, 55, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 35px rgba(111, 78, 55, 0.18);
+}
+
+/* ===== TABLE ===== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+/* ===== TABLE HEADER ===== */
+
+th {
+  background: linear-gradient(
+    135deg,
+    #6f4e37,
+    #4a2c2a
+  );
+
+  color: #f8f1e5;
+
+  padding: 14px;
+
+  text-align: left;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+/* ===== TABLE CELLS ===== */
+
+td {
+  padding: 14px;
+
+  border-bottom: 1px solid #eadfcf;
+
+  color: #4a2c2a;
+}
+
+/* ===== STRIPED ROWS ===== */
+
+tr:nth-child(even) {
+  background: #f8f1e5;
+}
+
+/* ===== ROW HOVER ===== */
+
+tr:hover {
+  background: #efe3d0;
+  transition: 0.3s ease;
+}
+
+/* ===== REMOVE LAST BORDER ===== */
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+.action-btn {
+  padding: 8px 14px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+/* Edit */
+
+.action-btn.edit {
+  background: linear-gradient(
+    135deg,
+    #c89b3c,
+    #a67c00
+  );
+
+  color: white;
+}
+
+/* Delete */
+
+.action-btn.delete {
+  background: linear-gradient(
+    135deg,
+    #8b3a3a,
+    #6b2323
+  );
+
+  color: white;
+}
+
+/* Hover */
+
+.action-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== MATERIAL ICONS ===== */
+
+mat-icon {
+  color: #6f4e37;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  mat-card {
+    padding: 16px;
+  }
+}
+
+/* Submit & Add Buttons */
+
+button.mat-flat-button {
+    background: linear-gradient(135deg, #c89b3c, #a67c00) !important;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button.mat-flat-button:hover:not([disabled]) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(200, 155, 60, 0.35);
+}
+
+button.mat-flat-button[disabled] {
+    background: #d7c3a3 !important;
+    color: #8b6f47 !important;
+    cursor: not-allowed;
+}
+
+/* Total Amount Button */
+
+.float-right {
+    float: right;
+}
+
+.float-right.mat-flat-button {
+    background: #6f4e37 !important;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.category-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

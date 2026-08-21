@@ -1,0 +1,66 @@
+/* ===== TOOLBAR ===== */
+
+.mat-toolbar {
+    margin: -24px;
+    width: auto;
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #4a2c2a,
+        #6f4e37
+    ) !important;
+
+    color: #f8f1e5;
+    box-shadow: 0 5px 15px rgba(74, 44, 42, 0.25);
+}
+
+/* ===== TITLE ===== */
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: #f8f1e5;
+}
+
+/* ===== FORM FIELDS ===== */
+
+mat-form-field {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Angular Material Outline */
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #c89b3c !important;
+}
+
+.mat-form-field-label {
+    color: #6f4e37 !important;
+}
+
+/* Input text */
+
+input,
+textarea {
+    color: #4a2c2a;
+}
+
+/* Focused field */
+
+.mat-focused .mat-form-field-outline-thick {
+    color: #c89b3c !important;
+}
+
+/* Icons */
+
+mat-icon {
+    color: #6f4e37;
+}

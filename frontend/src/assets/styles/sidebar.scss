@@ -1,0 +1,187 @@
+/*******************
+ Cafe Sidebar
+*******************/
+
+mat-sidenav {
+  width: 260px;
+  padding-top: 0;
+  background: #fffaf3;
+}
+
+#snav {
+
+  box-shadow: 4px 0 20px rgba(111, 78, 55, 0.12);
+
+  border-right: 2px solid #e6d3b3;
+
+  .mat-list-item {
+
+    height: auto;
+
+    margin: 6px 10px;
+
+    &:hover {
+      background: transparent;
+    }
+
+    .mat-list-item-content {
+
+      display: block;
+      padding: 0 10px;
+
+      &:hover {
+
+        background: transparent;
+
+        > a {
+          color: #c89b3c;
+        }
+      }
+    }
+
+    a {
+
+      height: 48px;
+
+      padding: 0 15px;
+
+      margin-bottom: 8px;
+
+      display: flex;
+      align-items: center;
+
+      border-radius: 12px;
+
+      font-size: 15px;
+      font-weight: 500;
+
+      color: #4a2c2a;
+
+      text-decoration: none;
+
+      transition: all 0.3s ease;
+
+      mat-icon:not(.dd-icon) {
+        margin-right: 12px;
+      }
+
+      mat-icon {
+        color: #6f4e37;
+      }
+
+      .dd-icon {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+
+        margin-left: auto;
+
+        transition: 0.3s;
+      }
+
+      &:hover {
+
+        background: #f8f1e5;
+
+        color: #c89b3c;
+
+        transform: translateX(5px);
+
+        mat-icon {
+          color: #c89b3c;
+        }
+      }
+    }
+
+    &.selected > .mat-list-item-content > a {
+
+      background: linear-gradient(
+        135deg,
+        #6f4e37,
+        #4a2c2a
+      );
+
+      color: white;
+
+      box-shadow: 0 5px 15px rgba(111, 78, 55, 0.25);
+
+      mat-icon {
+        color: #c89b3c;
+      }
+
+      .dd-icon {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+/*******************
+ User Profile
+*******************/
+
+.user-profile {
+
+  background: linear-gradient(
+    135deg,
+    #6f4e37,
+    #4a2c2a
+  );
+
+  padding: 20px 0;
+
+  .profile-img {
+
+    width: 70px;
+
+    margin: auto;
+
+    padding: 10px 0;
+
+    border-radius: 50%;
+
+    img {
+
+      width: 100%;
+
+      border-radius: 50%;
+
+      border: 3px solid #c89b3c;
+    }
+  }
+
+  .profile-text {
+
+    text-align: center;
+
+    padding-top: 10px;
+
+    > a {
+
+      color: #f8f1e5 !important;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      font-size: 15px;
+
+      background: transparent;
+
+      padding: 8px 0;
+
+      display: block;
+    }
+  }
+}
+
+/*******************
+ Closed Sidebar
+*******************/
+
+.sidebar-closed #snav {
+
+  &.mat-sidenav ~ .mat-drawer-content {
+    margin-left: 0 !important;
+  }
+}

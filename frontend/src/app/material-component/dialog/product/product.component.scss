@@ -1,0 +1,60 @@
+/* Toolbar */
+
+.mat-toolbar {
+    margin: -24px;
+    width: auto;
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #4a2c2a,
+        #6f4e37
+    ) !important;
+
+    color: #f8f1e5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Center Title */
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Form Fields */
+
+mat-form-field {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Angular Material Outline */
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #c89b3c;
+}
+
+/* Label */
+
+.mat-form-field-label {
+    color: #6f4e37 !important;
+}
+
+/* Input */
+
+input,
+textarea {
+    color: #4a2c2a;
+}
+
+/* Focus State */
+
+.mat-focused .mat-form-field-outline-thick {
+    color: #c89b3c !important;
+}

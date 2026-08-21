@@ -1,0 +1,189 @@
+/*
+=================================
+ Cafe Aroma - Vintage Topbar
+=================================
+*/
+
+mat-toolbar {
+
+    background: linear-gradient(
+        135deg,
+        #4a2c2a,
+        #6f4e37
+    ) !important;
+
+    color: #f8f1e5;
+
+    height: 70px;
+
+    box-shadow: 0 4px 20px rgba(74, 44, 42, 0.25);
+
+    transition: all 0.3s ease;
+
+    &.topbar {
+        padding: 0 20px;
+    }
+
+    .navbar-header {
+
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+
+        .navbar-brand {
+
+            display: flex;
+
+            align-items: center;
+
+            color: #f8f1e5;
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 22px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            .dark-logo {
+                display: none;
+            }
+
+            b {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .profile-pic {
+
+        width: 42px;
+        height: 42px;
+
+        border-radius: 50%;
+
+        border: 2px solid #c89b3c;
+
+        transition: 0.3s;
+    }
+
+    .profile-pic:hover {
+        transform: scale(1.08);
+    }
+
+    button {
+
+        color: #f8f1e5 !important;
+
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+
+        color: #c89b3c !important;
+
+        transform: scale(1.05);
+    }
+
+    mat-icon {
+        color: #c89b3c;
+    }
+}
+
+/*
+=================================
+ Topbar
+=================================
+*/
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*
+=================================
+ Sidenav Container
+=================================
+*/
+
+.example-sidenav-container {
+
+    flex: 1;
+
+    background: #f8f1e5;
+}
+
+/*
+=================================
+ Sidenav
+=================================
+*/
+
+mat-sidenav {
+
+    width: 260px;
+
+    background: #fffaf3;
+
+    border-right: 2px solid #e6d3b3;
+
+    box-shadow: 4px 0 15px rgba(111, 78, 55, 0.08);
+}
+
+/*
+=================================
+ Content Area
+=================================
+*/
+
+.page-wrapper {
+    background: #f8f1e5;
+}
+
+.page-content {
+    padding: 25px;
+}
+
+/*
+=================================
+ Scrollbar
+=================================
+*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f1e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c89b3c;
+    border-radius: 10px;
+}
+
+/*
+=================================
+ Responsive
+=================================
+*/
+
+@media (max-width: 768px) {
+
+    mat-toolbar {
+        height: 65px;
+    }
+
+    mat-sidenav {
+        width: 230px;
+    }
+
+    .page-content {
+        padding: 15px;
+    }
+}

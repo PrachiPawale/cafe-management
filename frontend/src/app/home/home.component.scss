@@ -1,0 +1,275 @@
+/* ===== GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f1e5;
+  font-family: 'Poppins', sans-serif;
+  color: #4a2c2a;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.wrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(62, 39, 35, 0.95);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+a.logo {
+  margin-right: auto;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c89b3c;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-left: 25px;
+}
+
+ul li a {
+  color: #f8f1e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Gold underline */
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #c89b3c;
+
+  transition: 0.3s ease;
+}
+
+ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+ul li a:hover {
+  color: #c89b3c;
+}
+
+
+/* ===== HERO CONTENT ===== */
+
+.bg-text {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  max-width: 900px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(10px);
+
+  padding: 50px;
+
+  border-radius: 25px;
+}
+
+.bg-text h1 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 4rem;
+
+  color: #fff;
+
+  margin-bottom: 20px;
+
+  letter-spacing: 2px;
+}
+
+.bg-text p {
+
+  color: #f8f1e5;
+
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+/* ===== CAFE BUTTON ===== */
+
+.hero-btn {
+
+  display: inline-block;
+
+  padding: 14px 35px;
+
+  background: linear-gradient(
+      135deg,
+      #c89b3c,
+      #a67c00
+  );
+
+  color: white;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all .3s ease;
+}
+
+.hero-btn:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(200,155,60,.4);
+}
+
+/* ===== CONTENT SECTIONS ===== */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+}
+
+.side {
+
+  flex: 30%;
+
+  background: #efe3d0;
+
+  padding: 30px;
+
+  border-radius: 20px;
+}
+
+.main {
+
+  flex: 70%;
+
+  background: #fffdf8;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  margin-left: 20px;
+}
+
+.main h2,
+.side h2 {
+
+  font-family: 'Playfair Display', serif;
+
+  color: #4a2c2a;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+
+  background: #3e2723;
+
+  color: #f8f1e5;
+
+  text-align: center;
+
+  padding: 25px;
+
+  margin-top: 50px;
+}
+
+/* ===== STICKY NAVBAR ===== */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ===== MATERIAL ICON ===== */
+
+.mat-icon {
+  vertical-align: middle;
+  color: #c89b3c;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .bg-text {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .bg-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    margin-top: 15px;
+  }
+}
